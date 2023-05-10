@@ -37,7 +37,7 @@ export default {
     overflow: hidden;
 
     .chevron {
-      font-size: 10px;
+      font-size: 0.6rem;
       padding-bottom: 2px;
       margin-left: 2px;
     }
@@ -62,7 +62,8 @@ export default {
 
     & a {
       position: relative;
-      font-size: 0.98rem;
+      font-size: 0.99rem;
+      font-weight: 500;
     }
 
     &:hover {
@@ -72,6 +73,7 @@ export default {
 
     .gp-dropmenu {
       position: absolute;
+      z-index: 999;
       width: 250px;
       padding: 16px 0;
       border-bottom: 4px solid $my-aqua;

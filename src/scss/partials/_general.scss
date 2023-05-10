@@ -1,5 +1,26 @@
+@use "./variables" as *;
+
+body {
+  scroll-behavior: smooth !important;
+}
+
 .gp-container {
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.gp-btn {
+  font-size: 0.82rem;
+  margin-top: 11px;
+  letter-spacing: -0.2px;
+  color: white;
+  background-color: $my-aqua;
+  border: 0;
+  padding: 16px 44px;
+
+  &:hover {
+    color: $my-aqua;
+    background-color: white;
+  }
 }
