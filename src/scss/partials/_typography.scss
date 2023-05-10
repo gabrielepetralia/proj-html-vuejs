@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+body {
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

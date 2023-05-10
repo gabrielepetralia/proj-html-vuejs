@@ -8,9 +8,9 @@ import Main from "./components/Main.vue"
 import Footer from "./components/Footer.vue"
 
 export default {
-  name : "App",
+  name: "App",
 
-  components : {
+  components: {
     Header,
     Jumbotron,
     Main,
@@ -20,15 +20,12 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <Header/>
-    <Jumbotron/>
-    <Main/>
-    <Footer/>
-  </div>
+  <Header/>
+  <Jumbotron/>
+  <Main/>
+  <Footer/>
 </template>
 
 <style lang="scss">
-  @use "bootstrap/scss/bootstrap.scss";
   @use "./scss/main.scss";
 </style>

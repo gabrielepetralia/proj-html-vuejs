@@ -1,13 +1,28 @@
 <script>
 export default {
-  name : "Jumbotron"
+  name: "Jumbotron",
+
+  methods : {
+    getImage(img) {
+      return new URL(`../assets/img/${img}`, import.meta.url).href
+    },
+  }
 }
 </script>
 
 <template>
-  <h1>Jumbotron</h1>
+  <div class="jumbotron">
+    <div class="gp-container">
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+@use "../scss/partials/variables" as *;  
+
+  .jumbotron {
+    height: 800px;
+    background-color: $my-blue;
+  }
 
 </style>

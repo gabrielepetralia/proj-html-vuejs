@@ -1,11 +1,15 @@
 <script>
 export default {
-  name : "Footer"
+  name: "Footer"
 }
 </script>
 
 <template>
-  <h1>Footer</h1>
+  <footer>
+    <div class="gp-container">
+      <h1>Footer</h1>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
