@@ -6,7 +6,7 @@ import { statsList, servicesList } from "../../data/listsDB"
 import { serviceCards } from "../../data/cardsDB"
 
 export default {
-  name: "SectionIntroduction",
+  name: "IntroductionSection",
 
   components: {
     SectionTitle,

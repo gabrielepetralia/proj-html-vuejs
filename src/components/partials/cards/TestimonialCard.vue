@@ -1,9 +1,10 @@
 <script>
+
 export default {
   name: "TestimonialCard",
 
   props: {
-    TestimonialCard: Object
+    testimonialCard: Object
   },
 
   methods: {
@@ -20,16 +21,16 @@ export default {
 
       <div class="col-auto img-col">
         <a class="testimonial-card-img d-flex align-items-center justify-content-center">
-          <img :src="getImage('testimonial-1.jpg')">
+          <img :src="getImage(testimonialCard.img)">
         </a>
         <img class="dots" :src="getImage('dots.png')">
       </div>
 
       <div class="col">
         <div class="testimonial-card-text">
-          <p>I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
-          <span class="fw-bold name">Mina Hollace</span>
-          <span class="profession">/ Freelancer</span>
+          <p>{{ testimonialCard.text }}</p>
+          <span class="fw-bold name">{{ testimonialCard.name }}</span>
+          <span class="profession">/ {{ testimonialCard.profession }}</span>
         </div>
       </div>
 
@@ -42,6 +43,7 @@ export default {
 
   .testimonial-card {
     max-width: 1000px;
+    background-color: white;
 
     .img-col {
       position: relative;

@@ -25,6 +25,7 @@ export default {
       text-transform: uppercase;
       color: $my-light-gray;
       letter-spacing: 1.2px;
+      margin-bottom: 18px;
     }
 
     h1 {

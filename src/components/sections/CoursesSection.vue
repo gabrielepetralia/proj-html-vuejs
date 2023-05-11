@@ -5,7 +5,7 @@ import CourseCard from "../partials/cards/CourseCard.vue"
 import { courseCards } from "../../data/cardsDB"
 
 export default {
-  name: "SectionCourses",
+  name: "CoursesSection",
 
   components: {
     SectionTitle,

@@ -1,16 +1,15 @@
 <script>
 import SectionTitle from "../partials/SectionTitle.vue"
-import TestimonialCard from "../partials/cards/TestimonialCard.vue"
+import SwiperTestimonials from "../partials/SwiperTestimonials.vue"
 
 import { sponsorsList } from "../../data/listsDB"
-import { testimonialCards } from "../../data/cardsDB"
 
 export default {
-  name: "SectionTestimonials",
+  name: "TestimonialsSection",
 
   components: {
     SectionTitle,
-    TestimonialCard
+    SwiperTestimonials
   },
 
   data() {
@@ -38,10 +37,8 @@ export default {
             titleHighlighted="MaxCoach"
             titleAfter="?" />
         </div>
-        
-        <div class="swiper">
-          <TestimonialCard/>
-        </div>
+
+        <SwiperTestimonials/>
 
         <div class="row sponsors align-items-center">
           <div v-for="(sponsor, index) in sponsorsList" :key="index" class="col text-center">
