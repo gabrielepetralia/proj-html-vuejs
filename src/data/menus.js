@@ -259,4 +259,83 @@ const headerMenu = [
   }
 ]
 
-export { headerMenu }
+const footerMenus = {
+    socialMenu: [
+      {
+        icon: "fa-square-facebook",
+        href: "#",
+      },
+      {
+        icon: "fa-twitter",
+        href: "#",
+      },
+      {
+        icon: "fa-instagram",
+        href: "#",
+      },
+      {
+        icon: "fa-linkedin",
+        href: "#",
+      }
+    ],
+
+    colsMenu: [
+      {
+        label: "Explore",
+        links: [
+          {
+            text: "Start here",
+            href: "#",
+          },
+          {
+            text: "Blog",
+            href: "#",
+          },
+          {
+            text: "About us",
+            href: "#",
+          },
+        ]
+      },
+      {
+        label: "",
+        links: [
+          {
+            text: "Success story",
+            href: "#",
+          },
+          {
+            text: "Courses",
+            href: "#",
+          },
+          {
+            text: "Contact us",
+            href: "#",
+          },
+        ]
+      },
+      {
+        label: "Information",
+        links: [
+          {
+            text: "Membership",
+            href: "#",
+          },
+          {
+            text: "Purchase guide",
+            href: "#",
+          },
+          {
+            text: "Privacy policy",
+            href: "#",
+          },
+          {
+            text: "Terms of services",
+            href: "#",
+          }
+        ]
+      },
+    ]
+  }
+
+export { headerMenu, footerMenus }
