@@ -18,9 +18,10 @@ body {
   background-color: $my-aqua;
   border: 0;
   padding: 16px 44px;
+  transition: all 0.2s;
 
   &:hover {
-    color: $my-aqua;
-    background-color: white;
+    color: white;
+    background-color: $my-blue;
   }
 }

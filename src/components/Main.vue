@@ -1,19 +1,25 @@
 <script>
+import SectionIntroduction from "./main_sections/SectionIntroduction.vue"
+
 export default {
-  name: "Main"
+  name: "Main",
+
+  components: {
+    SectionIntroduction
+  }
 }
 </script>
 
 <template>
   <main>
     <div class="gp-container">
-      <h1>Main</h1>
+      <SectionIntroduction/>
     </div>
   </main>
 </template>
 
 <style lang="scss" scoped>
   main {
-    margin-top: 200px;
+    margin-bottom: 500px;
   }
 </style>

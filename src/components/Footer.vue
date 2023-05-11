@@ -7,7 +7,7 @@ export default {
 <template>
   <footer>
     <div class="gp-container">
-      <h1>Footer</h1>
+      <!-- <h1>Footer</h1> -->
     </div>
   </footer>
 </template>

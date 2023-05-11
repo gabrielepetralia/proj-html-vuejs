@@ -14,11 +14,18 @@ export default {
       <i class="chevron text-white fa-solid fa-chevron-down"></i>
     </a>
     <ul class="gp-dropmenu gp-dropdown list-unstyled">
-      <li class="gp-dropmenu-item gp-dropdown-item d-flex justify-content-between align-items-center" v-for="(dropdownItem, index) in menuItem.dropdown" :key="index" :class="{ 'has-dropend': dropdownItem.dropend.length > 0 }">
+      <li
+        class="gp-dropmenu-item gp-dropdown-item d-flex justify-content-between align-items-center"
+        v-for="(dropdownItem, index) in menuItem.dropdown"
+        :key="index"
+        :class="{ 'has-dropend': dropdownItem.dropend.length > 0 }">
         <a :href="dropdownItem.href">{{ dropdownItem.text }}</a>
         <i v-if="dropdownItem.dropend.length > 0" class="chevron chevron-r fa-solid fa-chevron-right"></i>
         <ul v-if="dropdownItem.dropend.length > 0" class="gp-dropmenu gp-dropend list-unstyled">
-          <li v-for="(dropendItem, index) in dropdownItem.dropend" :key="index" class="gp-dropmenu-item gp-dropend-item d-flex justify-content-between align-items-center">
+          <li
+            v-for="(dropendItem, index) in dropdownItem.dropend"
+            :key="index"
+            class="gp-dropmenu-item gp-dropend-item d-flex justify-content-between align-items-center">
             <a :href="dropendItem.href">{{ dropendItem.text }}</a>
           </li>
         </ul>
