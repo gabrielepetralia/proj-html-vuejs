@@ -1,26 +1,27 @@
 <script>
-import SectionIntroduction from "./main_sections/SectionIntroduction.vue"
-import SectionCourses from "./main_sections/SectionCourses.vue"
+import IntroductionSection from "./sections/IntroductionSection.vue"
+import CoursesSection from "./sections/CoursesSection.vue"
+import TestimonialsSection from "./sections/TestimonialsSection.vue"
 
 export default {
   name: "Main",
 
   components: {
-    SectionIntroduction,
-    SectionCourses
+    IntroductionSection,
+    CoursesSection,
+    TestimonialsSection
   }
 }
 </script>
 
 <template>
   <main>
-    <SectionIntroduction/>
-    <SectionCourses/>
+    <IntroductionSection/>
+    <CoursesSection/>
+    <TestimonialsSection/>
   </main>
 </template>
 
 <style lang="scss" scoped>
-  main {
-    margin-bottom: 500px;
-  }
+  
 </style>

@@ -1,7 +1,9 @@
 <script>
 import SectionTitle from "../partials/SectionTitle.vue"
-import ServiceCard from "../partials/ServiceCard.vue"
-import { serviceCards } from "../../data/cardsdb"
+import ServiceCard from "../partials/cards/ServiceCard.vue"
+
+import { statsList, servicesList } from "../../data/listsDB"
+import { serviceCards } from "../../data/cardsDB"
 
 export default {
   name: "SectionIntroduction",
@@ -13,33 +15,9 @@ export default {
 
   data() {
     return {
-      stats: [
-        {
-          num: "1.926",
-          text: "finished session"
-        },
-        {
-          num: "3.092+",
-          text: "enrolled leaners"
-        },
-        {
-          num: "200",
-          text: "online instructors"
-        },
-        {
-          num: "100%",
-          text: "satisfaction rate"
-        },
-      ],
-
-      serviceCards,
-      
-      services: [
-        "Select & customize courses to your preferences",
-        "Change the tutor and make arrangements",
-        "Participate in events to join others",
-        "Get the desired certificate delivered at house"
-      ]
+      statsList,
+      servicesList,
+      serviceCards
     }
   }
 }
@@ -52,13 +30,13 @@ export default {
       <div class="row slogan justify-content-center">
         <div class="col text-center">
           <h2 class="fw-semibold">Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h2>
-          <span class="fw-bold">FANNIE MORENO</span>
-          <p>/Founder & CEO</p>
+          <span class="fw-bold name">Fannie Moreno</span>
+          <span class="profession">/Founder & CEO</span>
         </div>
       </div>
   
       <div class="row stats">
-        <div v-for="(stat, index) in stats" :key="index" class="col text-center">
+        <div v-for="(stat, index) in statsList" :key="index" class="col text-center">
           <span class="fw-bold">{{ stat.num }}</span>
           <p class="fw-bold">{{ stat.text }}</p>
         </div>
@@ -101,7 +79,7 @@ export default {
               titleAfter="for my clients." />
 
             <ul class="list-unstyled">
-              <li v-for="(service, index) in services" :key="index" class="d-flex align-items-center">
+              <li v-for="(service, index) in servicesList" :key="index" class="d-flex align-items-center">
                 <i class="check fa-solid fa-check"></i>
                 <p class="service-txt">{{ service }}</p>
               </li>
@@ -135,7 +113,7 @@ export default {
           margin-bottom: 38px;
         }
     
-        span {
+        .name {
           display: block;
           font-size: 0.95rem;
           color: $my-dark-gray;
@@ -144,9 +122,9 @@ export default {
           text-transform: uppercase;
         }
     
-        p {
+        .profession {
           font-size: 0.9rem;
-          color: $my-gray;
+          color: $my-light-gray;
         }
       }
     }

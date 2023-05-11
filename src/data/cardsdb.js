@@ -76,6 +76,33 @@ const courseCards = [
   }
 ]
 
+const testimonialCards = [
+  {
+    img: "testimonial-1.jpg",
+    text: "I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
+    name: "Mina Hollace",
+    profession: "Freelancer",
+  },
+  {
+    img: "testimonial-2.jpg",
+    text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+    name: "Madley Pondor",
+    profession: "IT Specialist",
+  },
+  {
+    img: "testimonial-3.jpg",
+    text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+    name: "Luvic Dubble",
+    profession: "Private Tutor",
+  },
+  {
+    img: "testimonial-4.jpg",
+    text: "I'm a very strict person so I require everything to be organized and neat. MaxCoach guys just got me.",
+    name: "Florence Themes",
+    profession: "Multimedia Admin",
+  }
+]
 
 
-export { serviceCards, courseCards }
+
+export { serviceCards, courseCards, testimonialCards }

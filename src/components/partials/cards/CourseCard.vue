@@ -8,7 +8,7 @@ export default {
 
   methods: {
     getImage(img) {
-      return new URL(`../../assets/img/${img}`, import.meta.url).href
+      return new URL(`../../../assets/img/${img}`, import.meta.url).href
     }
   }
 }
@@ -19,7 +19,7 @@ export default {
     <div class="course-card d-flex align-items-center rounded">
 
       <div class="col-auto">
-        <a href="courseCard.href" class="course-card-img d-flex align-items-center justify-content-center">
+        <a :href="courseCard.href" class="course-card-img d-flex align-items-center justify-content-center">
           <img :src="getImage(courseCard.img)">
         </a>
       </div>
@@ -49,11 +49,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../../scss/partials/variables" as *; 
+@use "../../../scss/partials/variables" as *; 
 
   .course-card {
     padding: 18px;
-    transition: all 0.4s;
+    transition: all 0.3s;
     margin: 15px 0;
 
     &:hover {

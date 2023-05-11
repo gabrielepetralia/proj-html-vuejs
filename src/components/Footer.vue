@@ -1,5 +1,5 @@
 <script>
-import { footerMenus } from '../data/menus';
+import { footerMenus } from '../data/menusDB';
 
 export default {
   name: "Footer",

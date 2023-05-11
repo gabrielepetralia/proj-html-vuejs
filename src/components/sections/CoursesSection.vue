@@ -1,7 +1,8 @@
 <script>
 import SectionTitle from "../partials/SectionTitle.vue"
-import CourseCard from "../partials/CourseCard.vue"
-import { courseCards } from "../../data/cardsdb"
+import CourseCard from "../partials/cards/CourseCard.vue"
+
+import { courseCards } from "../../data/cardsDB"
 
 export default {
   name: "SectionCourses",
@@ -30,7 +31,7 @@ export default {
             titleHighlighted="Courses" />
         </div>
 
-        <div class="row row-cols-2">
+        <div class="row row-cols-2 course-cards-container">
           <CourseCard
           v-for="(courseCard, index) in courseCards"
           :key="index"
@@ -54,6 +55,10 @@ export default {
   section {
     background-color: $my-dark-white;
     padding: 98px 0 94px 0;
+
+    .course-cards-container {
+      margin-top: 6px;
+    }
 
     .view-courses-btn {
       margin-top: 18px;

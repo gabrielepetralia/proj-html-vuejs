@@ -8,7 +8,7 @@ export default {
 
   methods: {
     getImage(img) {
-      return new URL(`../../assets/img/${img}`, import.meta.url).href
+      return new URL(`../../../assets/img/${img}`, import.meta.url).href
     }
   }
 }
@@ -29,7 +29,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../../scss/partials/variables" as *; 
+@use "../../../scss/partials/variables" as *; 
 
   .service-card {
     background-color: white;

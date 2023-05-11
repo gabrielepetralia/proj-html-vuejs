@@ -1,5 +1,5 @@
 <script>
-import { headerMenu } from "../data/menus"
+import { headerMenu } from "../data/menusDB"
 import MenuItem from "./partials/MenuItem.vue"
 
 export default {
