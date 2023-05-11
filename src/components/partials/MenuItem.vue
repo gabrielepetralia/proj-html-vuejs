@@ -105,7 +105,7 @@ export default {
 
         a,
         .chevron-r {
-          color: $my-light-gray;
+          color: $my-gray;
         }
 
         &.gp-dropdown-item:hover>a,

@@ -9,7 +9,7 @@ export default {
   methods: {
     getImage(img) {
       return new URL(`../../assets/img/${img}`, import.meta.url).href
-    },
+    }
   }
 }
 </script>
@@ -17,7 +17,7 @@ export default {
 <template>
   <div class="col">
     <div class="service-card d-flex flex-column rounded" :class="{'service-card-reverse' : serviceCard.reverse}">
-      <div class="service-card-txt">
+      <div class="service-card-text">
         <h5 class="fw-semibold">{{ serviceCard.title }}</h5>
         <p>{{ serviceCard.text }}</p>
       </div>
@@ -36,7 +36,7 @@ export default {
     width: 272px;
     padding: 36px 18px 0 4px;
     margin-bottom: 30px;
-    box-shadow: 0 0 20px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px 4px rgba(0,0,0,0.06);
     
     h5 {
       font-size: 1.2rem;
@@ -46,10 +46,10 @@ export default {
     p {
       font-size: 0.95rem;
       line-height: 1.6rem;
-      color: $my-light-gray;
+      color: $my-gray;
     }
 
-    .service-card-txt {
+    .service-card-text {
       padding-left: 19px;
     }
   }
@@ -62,7 +62,7 @@ export default {
       margin-bottom: 16px
     }
 
-    .service-card-txt {
+    .service-card-text {
       padding-left: 23px;
     }
   }

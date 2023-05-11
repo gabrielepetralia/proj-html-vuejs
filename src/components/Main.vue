@@ -1,20 +1,21 @@
 <script>
 import SectionIntroduction from "./main_sections/SectionIntroduction.vue"
+import SectionCourses from "./main_sections/SectionCourses.vue"
 
 export default {
   name: "Main",
 
   components: {
-    SectionIntroduction
+    SectionIntroduction,
+    SectionCourses
   }
 }
 </script>
 
 <template>
   <main>
-    <div class="gp-container">
-      <SectionIntroduction/>
-    </div>
+    <SectionIntroduction/>
+    <SectionCourses/>
   </main>
 </template>
 

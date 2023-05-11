@@ -85,6 +85,7 @@ export default {
 
     .icons-menu {
       position: relative;
+      
       .icon {
         font-size: 18px;
         padding: 0 11px;
@@ -132,12 +133,14 @@ export default {
 
       button {
         background-color: white;
+        transition: all 0.3s;
 
         &:hover {
           background-color: $my-aqua;
         }
         .lens {
           color: $my-aqua;
+          transition: all 0.2s;
         }
         &:hover .lens {
           color: white
