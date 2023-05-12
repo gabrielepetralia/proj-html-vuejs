@@ -6,6 +6,7 @@ import Header from "./components/Header.vue"
 import Jumbotron from "./components/Jumbotron.vue"
 import Main from "./components/Main.vue"
 import Footer from "./components/Footer.vue"
+import GoUpBtn from "./components/partials/GoUpBtn.vue"
 
 export default {
   name: "App",
@@ -14,7 +15,8 @@ export default {
     Header,
     Jumbotron,
     Main,
-    Footer
+    Footer,
+    GoUpBtn
   }
 }
 </script>
@@ -24,6 +26,7 @@ export default {
   <Jumbotron/>
   <Main/>
   <Footer/>
+  <GoUpBtn/>
 </template>
 
 <style lang="scss">
