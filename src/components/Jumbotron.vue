@@ -56,9 +56,9 @@ export default {
 
   .jumbotron {
     position: relative;
-    height: 720px;
+    height: 800px;
     background-color: $my-blue;
-    padding-top: 96px;
+    padding-top: 176px;
 
     h1 {
       font-size: 2.83rem;
@@ -83,7 +83,7 @@ export default {
       width: 85%;
       max-width: 770px;
       margin: 0 auto;
-      box-shadow: 0 0 20px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 0 20px 12px rgba(0,0,0,0.08);
       border-radius: 20px;
       background-color: white;
       padding: 20px;

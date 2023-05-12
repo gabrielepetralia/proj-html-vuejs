@@ -3,15 +3,16 @@ export default {
   name: "MenuItem",
 
   props : {
-    menuItem : Object
+    menuItem : Object,
+    headerFixedItem : Boolean
   }
 }
 </script>
 
 <template>
-  <li class="header-menu-item h-100 d-flex align-items-center">
-    <a class="text-white header-menu-link" :href="menuItem.href">{{ menuItem.text }}
-      <i class="chevron text-white fa-solid fa-chevron-down"></i>
+  <li class="header-menu-item h-100 d-flex align-items-center" :class="{ 'header-fixed-item' : headerFixedItem }">
+    <a class="header-menu-link" :href="menuItem.href">{{ menuItem.text }}
+      <i class="chevron fa-solid fa-chevron-down"></i>
     </a>
     <ul class="gp-dropmenu gp-dropdown list-unstyled">
       <li
@@ -43,39 +44,41 @@ export default {
     margin-left: 36px;
     overflow: hidden;
 
+    &:hover {
+      cursor: pointer;
+      overflow: visible;
+    }
+
     .chevron {
+      color: white;
       font-size: 0.6rem;
       padding-bottom: 2px;
       margin-left: 2px;
     }
 
-    & .header-menu-link::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 1px;
-      bottom: 0;
-      left: 0;
-      background-color: white;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
+    .header-menu-link {
+      color: white;
+      position: relative;
+      font-size: 0.99rem;
+      font-weight: 500;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
     }
 
     &:hover .header-menu-link::after {
       transform: scaleX(1);
       transform-origin: bottom left;
-    }
-
-    & a {
-      position: relative;
-      font-size: 0.99rem;
-      font-weight: 500;
-    }
-
-    &:hover {
-      cursor: pointer;
-      overflow: visible;
     }
 
     .gp-dropmenu {
@@ -84,6 +87,7 @@ export default {
       width: 250px;
       padding: 16px 0;
       border-bottom: 4px solid $my-aqua;
+      box-shadow: 0 0 20px 4px rgba(0,0,0,0.06);
       opacity: 0;
       transition: top 0.3s, opacity 0.4s ;
 
@@ -124,6 +128,27 @@ export default {
     &:hover .gp-dropdown {
       opacity: 1;
       top: 80px;
+    }
+
+    &.header-fixed-item {
+      transition: all 0.3s;
+
+      &:hover .header-menu-link,
+      &:hover .chevron{
+        color: $my-aqua;
+      }
+
+      .chevron {
+        color: $my-blue;
+      }
+
+      .header-menu-link {
+        color: $my-blue;
+
+        &::after {
+          background-color: $my-aqua;
+        }
+      }
     }
   }
 </style>
