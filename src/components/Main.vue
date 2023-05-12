@@ -3,6 +3,7 @@ import IntroductionSection from "./sections/IntroductionSection.vue"
 import CoursesSection from "./sections/CoursesSection.vue"
 import TestimonialsSection from "./sections/TestimonialsSection.vue"
 import BlogsSection from "./sections/BlogsSection.vue"
+import CtaSection from "./sections/CtaSection.vue"
 
 export default {
   name: "Main",
@@ -11,7 +12,8 @@ export default {
     IntroductionSection,
     CoursesSection,
     TestimonialsSection,
-    BlogsSection
+    BlogsSection,
+    CtaSection
   }
 }
 </script>
@@ -22,6 +24,7 @@ export default {
     <CoursesSection/>
     <TestimonialsSection/>
     <BlogsSection/>
+    <CtaSection/>
   </main>
 </template>
 

@@ -51,7 +51,7 @@ export default {
   </section>
 </template>
 
-<style lang="scss" sccoped>
+<style lang="scss" scoped>
 
   section {
     padding: 70px 0 90px 0;
