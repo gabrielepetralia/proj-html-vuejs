@@ -103,6 +103,36 @@ const testimonialCards = [
   }
 ]
 
+const blogCards = [
+  {
+    img: "blog-1.jpeg",
+    category: "Artist",
+    title: "Brush Strokes Energize Trees in Paintings",
+    date: "May 15, 2020",
+    views: "688",
+    href: "#",
+    categoryHref: "#"
+  },
+  {
+    img: "blog-2.jpg",
+    category: "Artist",
+    title: "Pocket-Sized Notebooks Hold Miniature Paintings",
+    date: "May 15, 2020",
+    views: "603",
+    href: "#",
+    categoryHref: "#"
+  },
+  {
+    img: "blog-3.jpg",
+    category: "Artist",
+    title: "Connection Between Self-Potraits and Identity",
+    date: "May 15, 2020",
+    views: "397",
+    href: "#",
+    categoryHref: "#"
+  },
+]
 
 
-export { serviceCards, courseCards, testimonialCards }
+
+export { serviceCards, courseCards, testimonialCards, blogCards }

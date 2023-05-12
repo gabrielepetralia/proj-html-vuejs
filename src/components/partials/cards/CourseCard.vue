@@ -89,6 +89,7 @@ export default {
       }
 
       .course-name {
+        margin-bottom: 10px;
 
         &:hover {
           cursor: pointer;
@@ -98,7 +99,7 @@ export default {
           line-height: 2rem;
           font-size: 1.27rem;
           color: $my-blue;
-          transition: all 0.2s;
+          transition: all 0.3s;
         }
 
         &:hover a {
@@ -107,7 +108,6 @@ export default {
       }
 
       .course-stats {
-        margin-top: 13px;
 
         .stat-icon {
           margin-right: 6px;

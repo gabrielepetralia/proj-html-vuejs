@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="section-title">
-    <p class="fw-semibold">{{ smallHeader }}</p>
+    <p class="fw-medium">{{ smallHeader }}</p>
     <h1 class="fw-bold">{{ titleBefore }} <span class="fw-light">{{ titleHighlighted }}</span> {{ titleAfter }}</h1>
   </div>
 </template>
@@ -22,20 +22,20 @@ export default {
 @use "../../scss/partials/variables" as *; 
 
   p {
-      text-transform: uppercase;
-      color: $my-light-gray;
-      letter-spacing: 1.2px;
-      margin-bottom: 18px;
-    }
+    text-transform: uppercase;
+    color: $my-light-gray;
+    letter-spacing: 1.2px;
+    margin-bottom: 18px;
+  }
 
-    h1 {
-      font-size: 3rem;
-      text-transform: capitalize;
-      color: $my-dark-gray;
-      margin-bottom: 40px;
+  h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $my-dark-gray;
+    margin-bottom: 40px;
 
-      span {
-        color: $my-aqua;
-      }
+    span {
+      color: $my-aqua;
     }
+  }
 </style>
