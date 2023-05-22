@@ -1,24 +1,24 @@
 const serviceCards = [
   {
-    title: "Graphic Design",
+    title: "Graphic design",
     text: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.",
     img: "service-1.png",
     reverse: false,
   },
   {
-    title: "Business Administration",
+    title: "Business administration",
     text: "Learners are encouraged to study the mechanism and structure of system administration.",
     img: "service-2.png",
     reverse: false,
   },
   {
-    title: "Idea Discussion",
+    title: "Idea discussion",
     text: "Get teamed up with the specialists who work and teach coding for years at famous universities.",
     img: "service-3.png",
     reverse: true,
   },
   {
-    title: "Web Development",
+    title: "Web development",
     text: "Learn to start building a webpage from scratch. You decide your own pace, course and speed.",
     img: "service-4.png",
     reverse: true,
@@ -133,6 +133,27 @@ const blogCards = [
   },
 ]
 
+const classCards = [
+  {
+    icon: "fa-flag",
+    title: "Idea discussion",
+    text: "Get teamed up with the specialists who work and teach coding for years at famous universities."
+  },
+  {
+    icon: "fa-gear",
+    title: "Web development",
+    text: "Learn to start building a webpage from scratch. You decide your own pace, course and speed."
+  },
+  {
+    icon: "fa-life-ring",
+    title: "System administration",
+    text: "Learners are ancouraged to study the mechanism and structure of system administration."
+  },
+  {
+    icon: "fa-desktop",
+    title: "Graphic Design",
+    text: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness."
+  }
+]
 
-
-export { serviceCards, courseCards, testimonialCards, blogCards }
+export { serviceCards, courseCards, testimonialCards, blogCards, classCards }

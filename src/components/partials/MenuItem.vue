@@ -140,6 +140,10 @@ export default {
 
       .chevron {
         color: $my-blue;
+        
+        &.chevron-r {
+          color: $my-gray;
+        }
       }
 
       .header-menu-link {

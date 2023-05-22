@@ -46,7 +46,7 @@ export default {
 @use "../../scss/partials/variables" as *; 
 
   section {
-    padding: 106px 0 100px 0;
+    padding: 106px 0 105px 0;
     background-color: $my-dark-white;
 
     .blog-cards-container {
